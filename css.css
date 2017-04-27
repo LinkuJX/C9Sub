@@ -3,15 +3,11 @@
 Compiled by: /u/Linkux18
 Started: May 18th 2016
 Completed on: May 25th, 2016
-Last Edited: February 12th, 2017
+Last Edited: April 26th, 2017
 C9 Color Palette: #00AEEF #B3B3B3 #050504 #0094CA
 C9 Font Family: Helvetica Neue, Arial
 --------------------------------------------------------------------------*/
 /* Sub name (sidebar image)*/
-* {
-    font-family: "Helvetica Neue", "Arial", sans-serif;
-    font-size: 13px;
-}
 .titlebox h1 a {
   display: none;
 }
@@ -1891,7 +1887,7 @@ button:active {
   display: inline-block;
   width: 29px;
   height: 21px;
-  background-image: url(%%teamflair%%);
+  background-image: url(%%team-flair%%);
   background-position: -19px -25px;
   font-size: 0
 }
@@ -1914,7 +1910,7 @@ button:active {
   display: inline-block;
   width: 52px;
   height: 16px;
-  background-image: url(%%SAME%%);
+  background-image: url(%%same%%);
   font-size: 0
 }
 
@@ -2382,6 +2378,7 @@ background: linear-gradient(red, orange, yellow, green, blue, indigo, violet)
 .commentarea .thing .tagline .author:hover {
   color: #00AEEF !important;
 }
+
 /* Verified Flair */
 
 a[href$="user/benhead2007"]:after,
@@ -2392,81 +2389,96 @@ a[href$="user/C9_Bobby"]:after,
 a[href$="u/C9_Bobby"]:after,
 a[href$="user/Cloud9Jack"]:after,
 a[href$="u/Cloud9Jack"]:after {
-    padding: 0;
-    text-indent: -9999px;
-    content: url(%%VerifiedStaff%%);
-    border: 0;
-    border-radius: 0;
-    cursor: help;
     width: 50px;
     height: 15px;
     margin-left: 3px;
-    line-height: 15px;
-    background-color: transparent!important;
+    content: url(%%VerifiedStaff%%);
+    position: absolute;
+    display: inline-block;
+    cursor: default;
+}
+
+a[href$="user/benhead2007"],
+a[href$="u/benhead2007"],
+a[href$="user/DananF"],
+a[href$="u/DananF"],
+a[href$="user/C9_Bobby"],
+a[href$="u/C9_Bobby"],
+a[href$="user/Cloud9Jack"],
+a[href$="u/Cloud9Jack"] {
+    margin-right: 50px;
 }
 
 a[href$="user/Incarnati0nEUW"]:after,
 a[href$="u/Incarnati0nEUW"]:after {
-    padding: 0;
-    text-indent: -9999px;
-    content: url(%%VerifiedLol%%);
-    border: 0;
-    border-radius: 0;
-    cursor: help;
     width: 50px;
     height: 15px;
     margin-left: 3px;
-    line-height: 15px;
-    background-color: transparent!important;
+    content: url(%%VerifiedLol%%);
+    position: absolute;
+    display: inline-block;
+    cursor: default;
+}
+
+a[href$="user/Incarnati0nEUW"],
+a[href$="u/Incarnati0nEUW"] {
+    margin-right: 50px;
 }
 
 a[href$="user/mShroud"]:after,
 a[href$="u/mShroud"]:after,
 a[href$="user/Skadewdle"]:after,
 a[href$="u/Skadewdle"]:after {
-    padding: 0;
-    text-indent: -9999px;
-    content: url(%%VerifiedCsgo%%);
-    border: 0;
-    border-radius: 0;
-    cursor: help;
     width: 50px;
     height: 15px;
     margin-left: 3px;
-    line-height: 15px;
-    background-color: transparent!important;
+    content: url(%%VerifiedCsgo%%);
+    position: absolute;
+    display: inline-block;
+    cursor: default;
+}
+
+a[href$="user/mShroud"],
+a[href$="u/mShroud"],
+a[href$="user/Skadewdle"],
+a[href$="u/Skadewdle"] {
+    margin-right: 50px;
 }
 
 a[href$="user/callemvm"]:after,
 a[href$="u/callemvm"]:after,
 a[href$="user/ImViDoL"]:after,
 a[href$="u/ImViDoL"]:after {
-    padding: 0;
-    text-indent: -9999px;
-    content: url(%%VerifiedMedia%%);
-    border: 0;
-    border-radius: 0;
-    cursor: help;
     width: 50px;
     height: 15px;
     margin-left: 3px;
-    line-height: 15px;
-    background-color: transparent!important;
+    content: url(%%VerifiedMedia%%);
+    position: absolute;
+    display: inline-block;
+    cursor: default;
+}
+
+a[href$="user/callemvm"],
+a[href$="u/callemvm"],
+a[href$="user/ImViDoL"],
+a[href$="u/ImViDoL"] {
+    margin-right: 50px;
 }
 
 a[href$="user/daniellee912"]:after,
 a[href$="u/daniellee912"]:after {
-    padding: 0;
-    text-indent: -9999px;
-    content: url(%%VerifiedSmash%%);
-    border: 0;
-    border-radius: 0;
-    cursor: help;
     width: 50px;
     height: 15px;
     margin-left: 3px;
-    line-height: 15px;
-    background-color: transparent!important;
+    content: url(%%VerifiedSmash%%);
+    position: absolute;
+    display: inline-block;
+    cursor: default;
+}
+
+a[href$="user/daniellee912"],
+a[href$="u/daniellee912"] {
+    margin-right: 50px;
 }
 
 /* EX-C9 Flair*/
@@ -2481,17 +2493,26 @@ a[href$="user/lemination"]:after,
 a[href$="u/lemination"]:after,
 a[href$="user/stunna-"]:after,
 a[href$="u/stunna-"]:after {
-    padding: 0;
-    text-indent: -9999px;
-    content: url(%%VerifiedFormer%%);
-    border: 0;
-    border-radius: 0;
-    cursor: help;
     width: 50px;
     height: 15px;
     margin-left: 3px;
-    line-height: 15px;
-    background-color: transparent!important;
+    content: url(%%VerifiedFormer%%);
+    position: absolute;
+    display: inline-block;
+    cursor: default;
+}
+
+a[href$="user/MrLemonDog"],
+a[href$="u/MrLemonDog"],
+a[href$="user/LoLSpook"],
+a[href$="u/LoLSpook"], 
+a[href$="user/Hai_L9"],
+a[href$="u/Hai_L9"],
+a[href$="user/lemination"],
+a[href$="u/lemination"],
+a[href$="user/stunna-"],
+a[href$="u/stunna-"] {
+    margin-right: 50px;
 }
 
 /* Verified Awesomeness WIP*/
@@ -2916,7 +2937,7 @@ body > div > :not(.commentarea) a[href$="-logo"] {
     text-decoration: none;
     cursor: default;
     background:
-    url(%%team-flairs%%) top left no-repeat;
+    url(%%teamflairs%%) top left no-repeat;
     width: 25px;
     height: 25px;
     border-bottom: none;
@@ -2925,11 +2946,15 @@ body > div > :not(.commentarea) a[href$="-logo"] {
 }
 
 body > div > :not(.commentarea) a[href$="#3dmax-logo"]      {background-position: -28px -1px; width: 18px}
+body > div > :not(.commentarea) a[href$="#5power-logo"]     {background-position: -235px -273px; width: 25px}
 body > div > :not(.commentarea) a[href$="#ace-logo"]        {background-position: -48px -1px; width: 111px}
 body > div > :not(.commentarea) a[href$="#ad-logo"]         {background-position: -161px -1px; width: 27px}
 body > div > :not(.commentarea) a[href$="#affinity-logo"]   {background-position: -190px -1px; width: 27px}
 body > div > :not(.commentarea) a[href$="#astralis-logo"]   {background-position: -219px -1px; width: 21px}
+body > div > :not(.commentarea) a[href$="#bmc-logo"]        {background-position: -1px -330px; width: 52px}
 body > div > :not(.commentarea) a[href$="#bravado-logo"]    {background-position: -1px -28px; width: 25px}
+body > div > :not(.commentarea) a[href$="#chiefs-logo"]     {background-position: -254px -303px; width: 20px}
+body > div > :not(.commentarea) a[href$="#chiefsw-logo"]    {background-position: -276px -303px; width: 20px}
 body > div > :not(.commentarea) a[href$="#clg-logo"]        {background-position: -28px -28px; width: 35px}
 body > div > :not(.commentarea) a[href$="#cloud9-logo"]     {background-position: -65px -28px; width: 36px}
 body > div > :not(.commentarea) a[href$="#cm-logo"]         {background-position: -103px -28px; width: 18px}
@@ -2945,48 +2970,70 @@ body > div > :not(.commentarea) a[href$="#efrag-logo"]      {background-position
 body > div > :not(.commentarea) a[href$="#ele-logo"]        {background-position: -114px -55px; width: 25px}
 body > div > :not(.commentarea) a[href$="#enemy-logo"]      {background-position: -141px -55px; width: 23px}
 body > div > :not(.commentarea) a[href$="#envyus-logo"]     {background-position: -166px -55px; width: 25px}
+body > div > :not(.commentarea) a[href$="#envyusw-logo"]    {background-position: -66px -273px; width: 25px}
+body > div > :not(.commentarea) a[href$="#enzo-logo"]       {background-position: -106px -243px; width: 59px}
 body > div > :not(.commentarea) a[href$="#epsilon-logo"]    {background-position: -193px -55px; width: 52px}
 body > div > :not(.commentarea) a[href$="#esc-logo"]        {background-position: -1px -82px; width: 20px}
 body > div > :not(.commentarea) a[href$="#f3-logo"]         {background-position: -23px -82px; width: 24px}
 body > div > :not(.commentarea) a[href$="#faze-logo"]       {background-position: -49px -82px; width: 38px}
+body > div > :not(.commentarea) a[href$="#fazew-logo"]      {background-position: -1px -303px; width: 38px}
+body > div > :not(.commentarea) a[href$="#five-logo"]       {background-position: -53px -243px; width: 25px}
 body > div > :not(.commentarea) a[href$="#fnatic-logo"]     {background-position: -89px -82px; width: 30px}
 body > div > :not(.commentarea) a[href$="#fonature-logo"]   {background-position: -268px -136px; width: 30px}
 body > div > :not(.commentarea) a[href$="#g2-logo"]         {background-position: -121px -82px; width: 22px}
-body > div > :not(.commentarea) a[href$="#gambit-logo"]     {background-position: -145px -82px; width: 21px}
+body > div > :not(.commentarea) a[href$="#gambit-logo"]     {background-position: -144px -82px; width: 23px}
+body > div > :not(.commentarea) a[href$="#ghost-logo"]      {background-position: -54px -330px; width: 26px}
+body > div > :not(.commentarea) a[href$="#ghostw-logo"]     {background-position: -82px -330px; width: 26px}
 body > div > :not(.commentarea) a[href$="#godsent-logo"]    {background-position: -168px -82px; width: 29px}
 body > div > :not(.commentarea) a[href$="#hr-logo"]         {background-position: -197px -82px; width: 29px}
 body > div > :not(.commentarea) a[href$="#ibp-logo"]        {background-position: -1px -109px; width: 43px}
 body > div > :not(.commentarea) a[href$="#igame-logo"]      {background-position: -243px -190px; width: 48px}
 body > div > :not(.commentarea) a[href$="#immortals-logo"]  {background-position: -46px -109px; width: 25px}
 body > div > :not(.commentarea) a[href$="#immunity-logo"]   {background-position: -73px -109px; width: 35px}
+body > div > :not(.commentarea) a[href$="#jyp-logo"]        {background-position: -168px -243px; width: 25px}
+body > div > :not(.commentarea) a[href$="#k23-logo"]        {background-position: -222px -244px; width: 24px}
 body > div > :not(.commentarea) a[href$="#keyd-logo"]       {background-position: -228px -82px; width: 19px}
 body > div > :not(.commentarea) a[href$="#kinguin-logo"]    {background-position: -110px -109px; width: 17px}
 body > div > :not(.commentarea) a[href$="#lc-logo"]         {background-position: -129px -109px; width: 25px}
 body > div > :not(.commentarea) a[href$="#ldlc-logo"]       {background-position: -156px -109px; width: 56px}
+body > div > :not(.commentarea) a[href$="#ldlcnew-logo"]    {background-position: -93px -273px; width: 25px}
+body > div > :not(.commentarea) a[href$="#ldlcw-logo"]      {background-position: -41px -303px; width: 25px}
 body > div > :not(.commentarea) a[href$="#lgb-logo"]        {background-position: -214px -109px; width: 22px}
 body > div > :not(.commentarea) a[href$="#heroic-logo"]     {background-position: -236px -109px; width: 28px}
 body > div > :not(.commentarea) a[href$="#tl-logo"]         {background-position: -1px -136px; width: 25px} /* liquid  tl */
+body > div > :not(.commentarea) a[href$="#tlw-logo"]        {background-position: -66px -303px; width: 25px}
 body > div > :not(.commentarea) a[href$="#lounge-logo"]     {background-position: -28px -136px; width: 47px}
 body > div > :not(.commentarea) a[href$="#lg-logo"]         {background-position: -77px -136px; width: 25px} /* luminosity  lg */
+body > div > :not(.commentarea) a[href$="#misfits-logo"]    {background-position: -120px -273px; width: 20px}
 body > div > :not(.commentarea) a[href$="#mongolz-logo"]    {background-position: -104px -136px; width: 21px}
 body > div > :not(.commentarea) a[href$="#msports-logo"]    {background-position: -127px -136px; width: 46px}
 body > div > :not(.commentarea) a[href$="#mtw-logo"]        {background-position: -1px -163px; width: 95px}
+body > div > :not(.commentarea) a[href$="#mvpproject-logo"] {background-position: -207px -273px; width: 26px}
 body > div > :not(.commentarea) a[href$="#myxmg-logo"]      {background-position: -175px -136px; width: 31px}
-body > div > :not(.commentarea) a[href$="#navi-logo"]       {background-position: -208px -136px; width: 28px}
+body > div > :not(.commentarea) a[href$="#navi-logo"]       {background-position: -207px -136px; width: 28px}
 body > div > :not(.commentarea) a[href$="#nfaculty-logo"]   {background-position: -98px -163px; width: 27px}
 body > div > :not(.commentarea) a[href$="#nihilum-logo"]    {background-position: -127px -163px; width: 32px}
-body > div > :not(.commentarea) a[href$="#nip-logo"]        {background-position: -161px -163px; width: 25px}
+body > div > :not(.commentarea) a[href$="#nip-logo"]        {background-position: -227px -303px; width: 25px}
+body > div > :not(.commentarea) a[href$="#nipold-logo"]     {background-position: -161px -163px; width: 25px}
+body > div > :not(.commentarea) a[href$="#nipw-logo"]       {background-position: -93px -303px; width: 25px}
+body > div > :not(.commentarea) a[href$="#north-logo"]      {background-position: -39px -273px; width: 25px}
 body > div > :not(.commentarea) a[href$="#nrg-logo"]        {background-position: -188px -163px; width: 38px}
+body > div > :not(.commentarea) a[href$="#nrgw-logo"]       {background-position: -120px -303px; width: 38px}
 body > div > :not(.commentarea) a[href$="#one-logo"]        {background-position: -250px -163px; width: 36px}
 body > div > :not(.commentarea) a[href$="#optic-logo"]      {background-position: -1px -190px; width: 38px}
+body > div > :not(.commentarea) a[href$="#opticw-logo"]     {background-position: -160px -303px; width: 38px}
 body > div > :not(.commentarea) a[href$="#penta-logo"]      {background-position: -228px -163px; width: 18px}
 body > div > :not(.commentarea) a[href$="#pkd-logo"]        {background-position: -41px -190px; width: 34px}
 body > div > :not(.commentarea) a[href$="#quetzal-logo"]    {background-position: -253px -217px; width: 25px}
+body > div > :not(.commentarea) a[href$="#reak-logo"]       {background-position: -246px -243px; width: 32px}
 body > div > :not(.commentarea) a[href$="#reason-logo"]     {background-position: -77px -190px; width: 25px}
 body > div > :not(.commentarea) a[href$="#recursive-logo"]  {background-position: -104px -190px; width: 36px}
 body > div > :not(.commentarea) a[href$="#renegades-logo"]  {background-position: -142px -190px; width: 26px}
-body > div > :not(.commentarea) a[href$="#selfless-logo"]   {background-position: -170px -190px; width: 20px}
+body > div > :not(.commentarea) a[href$="#rush-logo"]       {background-position: -141px -273px; width: 34px}
+body > div > :not(.commentarea) a[href$="#selfless-logo"]   {background-position: -175px -273px; width: 30px}
+body > div > :not(.commentarea) a[href$="#signature-logo"]  {background-position: -195px -244px; width: 25px}
 body > div > :not(.commentarea) a[href$="#sk-logo"]         {background-position: -192px -190px; width: 25px}
+body > div > :not(.commentarea) a[href$="#skw-logo"]        {background-position: -200px -303px; width: 25px}
 body > div > :not(.commentarea) a[href$="#ssoldiers-logo"]  {background-position: -237px -136px; width: 28px}
 body > div > :not(.commentarea) a[href$="#splyce-logo"]     {background-position: -219px -190px; width: 21px}
 body > div > :not(.commentarea) a[href$="#syn-logo"]        {background-position: -1px -217px; width: 29px}
@@ -2994,15 +3041,20 @@ body > div > :not(.commentarea) a[href$="#tempo-logo"]      {background-position
 body > div > :not(.commentarea) a[href$="#titan-logo"]      {background-position: -70px -217px; width: 17px}
 body > div > :not(.commentarea) a[href$="#tsm-logo"]        {background-position: -89px -217px; width: 25px}
 body > div > :not(.commentarea) a[href$="#tyloo-logo"]      {background-position: -123px -217px; width: 25px}
+body > div > :not(.commentarea) a[href$="#ukraine-logo"]    {background-position: -2px -273px; width: 34px}
 body > div > :not(.commentarea) a[href$="#us-logo"]         {background-position: -156px -217px; width: 25px}
+body > div > :not(.commentarea) a[href$="#uya-logo"]        {background-position: -265px -273px; width: 25px}
 body > div > :not(.commentarea) a[href$="#vexed-logo"]      {background-position: -183px -217px; width: 21px}
 body > div > :not(.commentarea) a[href$="#vg-logo"]         {background-position: -206px -217px; width: 44px}
+body > div > :not(.commentarea) a[href$="#vgcyber-logo"]    {background-position: -79px -243px; width: 25px}
 body > div > :not(.commentarea) a[href$="#vox-logo"]        {background-position: -242px -1px; width: 45px}
 body > div > :not(.commentarea) a[href$="#vp-logo"]         {background-position: -242px -28px; width: 25px}
 body > div > :not(.commentarea) a[href$="#winterfox-logo"]  {background-position: -269px -28px; width: 24px}
 body > div > :not(.commentarea) a[href$="#wolf-logo"]       {background-position: -247px -55px; width: 27px}
 body > div > :not(.commentarea) a[href$="#xapso-logo"]      {background-position: -249px -82px; width: 24px}
 body > div > :not(.commentarea) a[href$="#youporn-logo"]    {background-position: -276px -55px; width: 15px}
+body > div > :not(.commentarea) a[href$="#spirit-logo"]     {background-position: -1px -243px; width: 23px}
+body > div > :not(.commentarea) a[href$="#vega-logo"]       {background-position: -23px -243px; width: 27px}
 
 body > div >:not(.commentarea) a[href*="#map-"] {
   content: '';
@@ -3062,122 +3114,124 @@ body > div >:not(.commentarea) a[href$="#map-train"] {
 .flair-brand::before,a[href="#c-brand"]{background-position:-49px -27px}
 .flair-braum::before,a[href="#c-braum"]{background-position:-73px -27px}
 .flair-caitlyn::before,a[href="#c-caitlyn"]{background-position:-97px -27px}
-.flair-camille::before,a[href="#c-camille"]{background-position:-73px -315px}
-.flair-cassiopeia::before,a[href="#c-cassiopeia"]{background-position:-121px -27px}
-.flair-chogath::before,a[href="#c-chogath"]{background-position:-145px -27px}
-.flair-corki::before,a[href="#c-corki"]{background-position:-169px -27px}
-.flair-darius::before,a[href="#c-darius"]{background-position:-193px -27px}
-.flair-diana::before,a[href="#c-diana"]{background-position:-217px -27px}
-.flair-draven::before,a[href="#c-draven"]{background-position:-1px -51px}
-.flair-drmundo::before,a[href="#c-drmundo"]{background-position:-25px -51px}
-.flair-ekko::before,a[href="#c-ekko"]{background-position:-49px -51px}
-.flair-elise::before,a[href="#c-elise"]{background-position:-73px -51px}
-.flair-evelynn::before,a[href="#c-evelynn"]{background-position:-97px -51px}
-.flair-ezreal::before,a[href="#c-ezreal"]{background-position:-121px -51px}
-.flair-fiddlesticks::before,a[href="#c-fiddlesticks"]{background-position:-145px -51px}
-.flair-fiora::before,a[href="#c-fiora"]{background-position:-169px -51px}
-.flair-fizz::before,a[href="#c-fizz"]{background-position:-193px -51px}
-.flair-galio::before,a[href="#c-galio"]{background-position:-217px -51px}
-.flair-gangplank::before,a[href="#c-gangplank"]{background-position:-1px -75px}
-.flair-garen::before,a[href="#c-garen"]{background-position:-25px -75px}
-.flair-gnar::before,a[href="#c-gnar"]{background-position:-49px -75px}
-.flair-gragas::before,a[href="#c-gragas"]{background-position:-73px -75px}
-.flair-graves::before,a[href="#c-graves"]{background-position:-97px -75px}
-.flair-hecarim::before,a[href="#c-hecarim"]{background-position:-121px -75px}
-.flair-heimerdinger::before,a[href="#c-heimerdinger"]{background-position:-145px -75px}
-.flair-illaoi::before,a[href="#c-illaoi"]{background-position:-169px -75px}
-.flair-irelia::before,a[href="#c-irelia"]{background-position:-193px -75px}
-.flair-ivern::before,a[href="#c-ivern"]{background-position:-49px -315px}
-.flair-janna::before,a[href="#c-janna"]{background-position:-217px -75px}
-.flair-jarvaniv::before,a[href="#c-jarvaniv"]{background-position:-1px -99px}
-.flair-jax::before,a[href="#c-jax"]{background-position:-25px -99px}
-.flair-jayce::before,a[href="#c-jayce"]{background-position:-49px -99px}
-.flair-jhin::before,a[href="#c-jhin"]{background-position:-73px -99px}
-.flair-jinx::before,a[href="#c-jinx"]{background-position:-97px -99px}
-.flair-kalista::before,a[href="#c-kalista"]{background-position:-121px -99px}
-.flair-karma::before,a[href="#c-karma"]{background-position:-145px -99px}
-.flair-karthus::before,a[href="#c-karthus"]{background-position:-169px -99px}
-.flair-kassadin::before,a[href="#c-kassadin"]{background-position:-193px -99px}
-.flair-katarina::before,a[href="#c-katarina"]{background-position:-217px -99px}
-.flair-kayle::before,a[href="#c-kayle"]{background-position:-1px -123px}
-.flair-kennen::before,a[href="#c-kennen"]{background-position:-25px -123px}
-.flair-khazix::before,a[href="#c-khazix"]{background-position:-49px -123px}
-.flair-kindred::before,a[href="#c-kindred"]{background-position:-73px -123px}
-.flair-kled::before,a[href="#c-kled"]{background-position:-25px -315px}
-.flair-kogmaw::before,a[href="#c-kogmaw"]{background-position:-97px -123px}
-.flair-leblanc::before,a[href="#c-leblanc"]{background-position:-121px -123px}
-.flair-leesin::before,a[href="#c-leesin"]{background-position:-145px -123px}
-.flair-leona::before,a[href="#c-leona"]{background-position:-169px -123px}
-.flair-lissandra::before,a[href="#c-lissandra"]{background-position:-193px -123px}
-.flair-lucian::before,a[href="#c-lucian"]{background-position:-217px -123px}
-.flair-lulu::before,a[href="#c-lulu"]{background-position:-1px -147px}
-.flair-lux::before,a[href="#c-lux"]{background-position:-25px -147px}
-.flair-malphite::before,a[href="#c-malphite"]{background-position:-49px -147px}
-.flair-malzahar::before,a[href="#c-malzahar"]{background-position:-73px -147px}
-.flair-maokai::before,a[href="#c-maokai"]{background-position:-97px -147px}
-.flair-masteryi::before,a[href="#c-masteryi"]{background-position:-121px -147px}
-.flair-missfortune::before,a[href="#c-missfortune"]{background-position:-145px -147px}
-.flair-mordekaiser::before,a[href="#c-mordekaiser"]{background-position:-193px -147px}
-.flair-morgana::before,a[href="#c-morgana"]{background-position:-217px -147px}
-.flair-nami::before,a[href="#c-nami"]{background-position:-1px -171px}
-.flair-nasus::before,a[href="#c-nasus"]{background-position:-25px -171px}
-.flair-nautilus::before,a[href="#c-nautilus"]{background-position:-49px -171px}
-.flair-nidalee::before,a[href="#c-nidalee"]{background-position:-73px -171px}
-.flair-nocturne::before,a[href="#c-nocturne"]{background-position:-97px -171px}
-.flair-nunu::before,a[href="#c-nunu"]{background-position:-121px -171px}
-.flair-olaf::before,a[href="#c-olaf"]{background-position:-145px -171px}
-.flair-orianna::before,a[href="#c-orianna"]{background-position:-169px -171px}
-.flair-pantheon::before,a[href="#c-pantheon"]{background-position:-193px -171px}
-.flair-poppy::before,a[href="#c-poppy"]{background-position:-217px -171px}
-.flair-quinn::before,a[href="#c-quinn"]{background-position:-1px -195px}
-.flair-rammus::before,a[href="#c-rammus"]{background-position:-25px -195px}
-.flair-reksai::before,a[href="#c-reksai"]{background-position:-49px -195px}
-.flair-renekton::before,a[href="#c-renekton"]{background-position:-73px -195px}
-.flair-rengar::before,a[href="#c-rengar"]{background-position:-97px -195px}
-.flair-riven::before,a[href="#c-riven"]{background-position:-121px -195px}
-.flair-rumble::before,a[href="#c-rumble"]{background-position:-145px -195px}
-.flair-ryze::before,a[href="#c-ryze"]{background-position:-169px -195px}
-.flair-sejuani::before,a[href="#c-sejuani"]{background-position:-193px -195px}
-.flair-shaco::before,a[href="#c-shaco"]{background-position:-217px -195px}
-.flair-shen::before,a[href="#c-shen"]{background-position:-1px -219px}
-.flair-shyvana::before,a[href="#c-shyvana"]{background-position:-25px -219px}
-.flair-singed::before,a[href="#c-singed"]{background-position:-49px -219px}
-.flair-sion::before,a[href="#c-sion"]{background-position:-73px -219px}
-.flair-sivir::before,a[href="#c-sivir"]{background-position:-97px -219px}
-.flair-skarner::before,a[href="#c-skarner"]{background-position:-121px -219px}
-.flair-sona::before,a[href="#c-sona"]{background-position:-145px -219px}
-.flair-soraka::before,a[href="#c-soraka"]{background-position:-169px -219px}
-.flair-swain::before,a[href="#c-swain"]{background-position:-193px -219px}
-.flair-syndra::before,a[href="#c-syndra"]{background-position:-217px -219px}
-.flair-tahmkench::before,a[href="#c-tahmkench"]{background-position:-1px -243px}
-.flair-taliyah::before,a[href="#c-taliyah"]{background-position:-25px -243px}
-.flair-talon::before,a[href="#c-talon"]{background-position:-49px -243px}
-.flair-taric::before,a[href="#c-taric"]{background-position:-73px -243px}
-.flair-teemo::before,a[href="#c-teemo"]{background-position:-97px -243px}
-.flair-thresh::before,a[href="#c-thresh"]{background-position:-121px -243px}
-.flair-tristana::before,a[href="#c-tristana"]{background-position:-145px -243px}
-.flair-trundle::before,a[href="#c-trundle"]{background-position:-169px -243px}
-.flair-tryndamere::before,a[href="#c-tryndamere"]{background-position:-193px -243px}
-.flair-twistedfate::before,a[href="#c-twistedfate"]{background-position:-217px -243px}
-.flair-twitch::before,a[href="#c-twitch"]{background-position:-1px -267px}
-.flair-udyr::before,a[href="#c-udyr"]{background-position:-25px -267px}
-.flair-urgot::before,a[href="#c-urgot"]{background-position:-49px -267px}
-.flair-varus::before,a[href="#c-varus"]{background-position:-73px -267px}
-.flair-vayne::before,a[href="#c-vayne"]{background-position:-97px -267px}
-.flair-veigar::before,a[href="#c-veigar"]{background-position:-121px -267px}
-.flair-velkoz::before,a[href="#c-velkoz"]{background-position:-145px -267px}
-.flair-vi::before,a[href="#c-vi"]{background-position:-169px -267px}
-.flair-viktor::before,a[href="#c-viktor"]{background-position:-193px -267px}
-.flair-vladimir::before,a[href="#c-vladimir"]{background-position:-217px -267px}
-.flair-volibear::before,a[href="#c-volibear"]{background-position:-1px -291px}
-.flair-warwick::before,a[href="#c-warwick"]{background-position:-25px -291px}
-.flair-wukong::before,a[href="#c-wukong"]{background-position:-169px -147px}
-.flair-xerath::before,a[href="#c-xerath"]{background-position:-49px -291px}
-.flair-xinzhao::before,a[href="#c-xinzhao"]{background-position:-73px -291px}
-.flair-yasuo::before,a[href="#c-yasuo"]{background-position:-97px -291px}
-.flair-yorick::before,a[href="#c-yorick"]{background-position:-121px -291px}
-.flair-zac::before,a[href="#c-zac"]{background-position:-145px -291px}
-.flair-zed::before,a[href="#c-zed"]{background-position:-169px -291px}
-.flair-ziggs::before,a[href="#c-ziggs"]{background-position:-193px -291px}
-.flair-zilean::before,a[href="#c-zilean"]{background-position:-217px -291px}
-.flair-zyra::before,a[href="#c-zyra"]{background-position:-1px -315px}
+.flair-camille::before,a[href="#c-camille"]{background-position:-121px -27px}
+.flair-cassiopeia::before,a[href="#c-cassiopeia"]{background-position:-145px -27px}
+.flair-chogath::before,a[href="#c-chogath"]{background-position:-169px -27px}
+.flair-corki::before,a[href="#c-corki"]{background-position:-193px -27px}
+.flair-darius::before,a[href="#c-darius"]{background-position:-217px -27px}
+.flair-diana::before,a[href="#c-diana"]{background-position:-1px -51px}
+.flair-draven::before,a[href="#c-draven"]{background-position:-25px -51px}
+.flair-drmundo::before,a[href="#c-drmundo"]{background-position:-49px -51px}
+.flair-ekko::before,a[href="#c-ekko"]{background-position:-73px -51px}
+.flair-elise::before,a[href="#c-elise"]{background-position:-97px -51px}
+.flair-evelynn::before,a[href="#c-evelynn"]{background-position:-121px -51px}
+.flair-ezreal::before,a[href="#c-ezreal"]{background-position:-145px -51px}
+.flair-fiddlesticks::before,a[href="#c-fiddlesticks"]{background-position:-169px -51px}
+.flair-fiora::before,a[href="#c-fiora"]{background-position:-193px -51px}
+.flair-fizz::before,a[href="#c-fizz"]{background-position:-217px -51px}
+.flair-galio::before,a[href="#c-galio"]{background-position:-1px -75px}
+.flair-gangplank::before,a[href="#c-gangplank"]{background-position:-25px -75px}
+.flair-garen::before,a[href="#c-garen"]{background-position:-49px -75px}
+.flair-gnar::before,a[href="#c-gnar"]{background-position:-73px -75px}
+.flair-gragas::before,a[href="#c-gragas"]{background-position:-97px -75px}
+.flair-graves::before,a[href="#c-graves"]{background-position:-121px -75px}
+.flair-hecarim::before,a[href="#c-hecarim"]{background-position:-145px -75px}
+.flair-heimerdinger::before,a[href="#c-heimerdinger"]{background-position:-169px -75px}
+.flair-illaoi::before,a[href="#c-illaoi"]{background-position:-193px -75px}
+.flair-irelia::before,a[href="#c-irelia"]{background-position:-217px -75px}
+.flair-ivern::before,a[href="#c-ivern"]{background-position:-1px -99px}
+.flair-janna::before,a[href="#c-janna"]{background-position:-25px -99px}
+.flair-jarvaniv::before,a[href="#c-jarvaniv"]{background-position:-49px -99px}
+.flair-jax::before,a[href="#c-jax"]{background-position:-73px -99px}
+.flair-jayce::before,a[href="#c-jayce"]{background-position:-97px -99px}
+.flair-jhin::before,a[href="#c-jhin"]{background-position:-121px -99px}
+.flair-jinx::before,a[href="#c-jinx"]{background-position:-145px -99px}
+.flair-kalista::before,a[href="#c-kalista"]{background-position:-169px -99px}
+.flair-karma::before,a[href="#c-karma"]{background-position:-193px -99px}
+.flair-karthus::before,a[href="#c-karthus"]{background-position:-217px -99px}
+.flair-kassadin::before,a[href="#c-kassadin"]{background-position:-1px -123px}
+.flair-katarina::before,a[href="#c-katarina"]{background-position:-25px -123px}
+.flair-kayle::before,a[href="#c-kayle"]{background-position:-49px -123px}
+.flair-kennen::before,a[href="#c-kennen"]{background-position:-73px -123px}
+.flair-khazix::before,a[href="#c-khazix"]{background-position:-97px -123px}
+.flair-kindred::before,a[href="#c-kindred"]{background-position:-121px -123px}
+.flair-kled::before,a[href="#c-kled"]{background-position:-145px -123px}
+.flair-kogmaw::before,a[href="#c-kogmaw"]{background-position:-169px -123px}
+.flair-leblanc::before,a[href="#c-leblanc"]{background-position:-193px -123px}
+.flair-leesin::before,a[href="#c-leesin"]{background-position:-217px -123px}
+.flair-leona::before,a[href="#c-leona"]{background-position:-1px -147px}
+.flair-lissandra::before,a[href="#c-lissandra"]{background-position:-25px -147px}
+.flair-lucian::before,a[href="#c-lucian"]{background-position:-49px -147px}
+.flair-lulu::before,a[href="#c-lulu"]{background-position:-73px -147px}
+.flair-lux::before,a[href="#c-lux"]{background-position:-97px -147px}
+.flair-malphite::before,a[href="#c-malphite"]{background-position:-121px -147px}
+.flair-malzahar::before,a[href="#c-malzahar"]{background-position:-145px -147px}
+.flair-maokai::before,a[href="#c-maokai"]{background-position:-169px -147px}
+.flair-masteryi::before,a[href="#c-masteryi"]{background-position:-193px -147px}
+.flair-missfortune::before,a[href="#c-missfortune"]{background-position:-217px -147px}
+.flair-mordekaiser::before,a[href="#c-mordekaiser"]{background-position:-25px -171px}
+.flair-morgana::before,a[href="#c-morgana"]{background-position:-49px -171px}
+.flair-nami::before,a[href="#c-nami"]{background-position:-73px -171px}
+.flair-nasus::before,a[href="#c-nasus"]{background-position:-97px -171px}
+.flair-nautilus::before,a[href="#c-nautilus"]{background-position:-121px -171px}
+.flair-nidalee::before,a[href="#c-nidalee"]{background-position:-145px -171px}
+.flair-nocturne::before,a[href="#c-nocturne"]{background-position:-169px -171px}
+.flair-nunu::before,a[href="#c-nunu"]{background-position:-193px -171px}
+.flair-olaf::before,a[href="#c-olaf"]{background-position:-217px -171px}
+.flair-orianna::before,a[href="#c-orianna"]{background-position:-1px -195px}
+.flair-pantheon::before,a[href="#c-pantheon"]{background-position:-25px -195px}
+.flair-poppy::before,a[href="#c-poppy"]{background-position:-49px -195px}
+.flair-quinn::before,a[href="#c-quinn"]{background-position:-73px -195px}
+.flair-rakan::before,a[href="#c-rakan"]{background-position:-97px -195px}
+.flair-rammus::before,a[href="#c-rammus"]{background-position:-121px -195px}
+.flair-reksai::before,a[href="#c-reksai"]{background-position:-145px -195px}
+.flair-renekton::before,a[href="#c-renekton"]{background-position:-169px -195px}
+.flair-rengar::before,a[href="#c-rengar"]{background-position:-193px -195px}
+.flair-riven::before,a[href="#c-riven"]{background-position:-217px -195px}
+.flair-rumble::before,a[href="#c-rumble"]{background-position:-1px -219px}
+.flair-ryze::before,a[href="#c-ryze"]{background-position:-25px -219px}
+.flair-sejuani::before,a[href="#c-sejuani"]{background-position:-49px -219px}
+.flair-shaco::before,a[href="#c-shaco"]{background-position:-73px -219px}
+.flair-shen::before,a[href="#c-shen"]{background-position:-97px -219px}
+.flair-shyvana::before,a[href="#c-shyvana"]{background-position:-121px -219px}
+.flair-singed::before,a[href="#c-singed"]{background-position:-145px -219px}
+.flair-sion::before,a[href="#c-sion"]{background-position:-169px -219px}
+.flair-sivir::before,a[href="#c-sivir"]{background-position:-193px -219px}
+.flair-skarner::before,a[href="#c-skarner"]{background-position:-217px -219px}
+.flair-sona::before,a[href="#c-sona"]{background-position:-1px -243px}
+.flair-soraka::before,a[href="#c-soraka"]{background-position:-25px -243px}
+.flair-swain::before,a[href="#c-swain"]{background-position:-49px -243px}
+.flair-syndra::before,a[href="#c-syndra"]{background-position:-73px -243px}
+.flair-tahmkench::before,a[href="#c-tahmkench"]{background-position:-97px -243px}
+.flair-taliyah::before,a[href="#c-taliyah"]{background-position:-121px -243px}
+.flair-talon::before,a[href="#c-talon"]{background-position:-145px -243px}
+.flair-taric::before,a[href="#c-taric"]{background-position:-169px -243px}
+.flair-teemo::before,a[href="#c-teemo"]{background-position:-193px -243px}
+.flair-thresh::before,a[href="#c-thresh"]{background-position:-217px -243px}
+.flair-tristana::before,a[href="#c-tristana"]{background-position:-1px -267px}
+.flair-trundle::before,a[href="#c-trundle"]{background-position:-25px -267px}
+.flair-tryndamere::before,a[href="#c-tryndamere"]{background-position:-49px -267px}
+.flair-twistedfate::before,a[href="#c-twistedfate"]{background-position:-73px -267px}
+.flair-twitch::before,a[href="#c-twitch"]{background-position:-97px -267px}
+.flair-udyr::before,a[href="#c-udyr"]{background-position:-121px -267px}
+.flair-urgot::before,a[href="#c-urgot"]{background-position:-145px -267px}
+.flair-varus::before,a[href="#c-varus"]{background-position:-169px -267px}
+.flair-vayne::before,a[href="#c-vayne"]{background-position:-193px -267px}
+.flair-veigar::before,a[href="#c-veigar"]{background-position:-217px -267px}
+.flair-velkoz::before,a[href="#c-velkoz"]{background-position:-1px -291px}
+.flair-vi::before,a[href="#c-vi"]{background-position:-25px -291px}
+.flair-viktor::before,a[href="#c-viktor"]{background-position:-49px -291px}
+.flair-vladimir::before,a[href="#c-vladimir"]{background-position:-73px -291px}
+.flair-volibear::before,a[href="#c-volibear"]{background-position:-97px -291px}
+.flair-warwick::before,a[href="#c-warwick"]{background-position:-121px -291px}
+.flair-wukong::before,a[href="#c-wukong"]{background-position:-1px -171px}
+.flair-xayah::before,a[href="#c-xayah"]{background-position:-145px -291px}
+.flair-xerath::before,a[href="#c-xerath"]{background-position:-169px -291px}
+.flair-xinzhao::before,a[href="#c-xinzhao"]{background-position:-193px -291px}
+.flair-yasuo::before,a[href="#c-yasuo"]{background-position:-217px -291px}
+.flair-yorick::before,a[href="#c-yorick"]{background-position:-1px -315px}
+.flair-zac::before,a[href="#c-zac"]{background-position:-25px -315px}
+.flair-zed::before,a[href="#c-zed"]{background-position:-49px -315px}
+.flair-ziggs::before,a[href="#c-ziggs"]{background-position:-73px -315px}
+.flair-zilean::before,a[href="#c-zilean"]{background-position:-97px -315px}
+.flair-zyra::before,a[href="#c-zyra"]{background-position:-121px -315px}
