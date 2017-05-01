@@ -3,7 +3,7 @@
 Compiled by: /u/Linkux18
 Started: May 18th 2016
 Completed on: May 25th, 2016
-Last Edited: April 26th, 2017
+Last Edited: May 1st, 2017
 C9 Color Palette: #00AEEF #B3B3B3 #050504 #0094CA
 C9 Font Family: Helvetica Neue, Arial
 --------------------------------------------------------------------------*/
@@ -2381,6 +2381,70 @@ background: linear-gradient(red, orange, yellow, green, blue, indigo, violet)
 
 /* Verified Flair */
 
+.flair-jackjack {
+    background-image: url(%%VerifiedFlairs%%);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 64px;
+    height: 14px;
+}
+
+.flair-linku {
+    background-image: url(%%VerifiedFlairs%%);
+    background-repeat: no-repeat;
+    background-position: 0 -14px;
+    width: 64px;
+    height: 14px;
+}
+
+.flair-staff {
+    background-image: url(%%VerifiedFlairs%%);
+    background-repeat: no-repeat;
+    background-position: 0 -28px;
+    width: 64px;
+    height: 14px;
+}
+
+.flair-staffmedia {
+    background-image: url(%%VerifiedFlairs%%);
+    background-repeat: no-repeat;
+    background-position: 0 -42px;
+    width: 64px;
+    height: 14px;
+}
+
+.flair-stafflol {
+    background-image: url(%%VerifiedFlairs%%);
+    background-repeat: no-repeat;
+    background-position: 0 -56px;
+    width: 64px;
+    height: 14px;
+}
+
+.flair-staffcsgo {
+    background-image: url(%%VerifiedFlairs%%);
+    background-repeat: no-repeat;
+    background-position: 0 -70px;
+    width: 64px;
+    height: 14px;
+}
+
+.flair-staffsmash {
+    background-image: url(%%VerifiedFlairs%%);
+    background-repeat: no-repeat;
+    background-position: 0 -84px;
+    width: 64px;
+    height: 14px;
+}
+
+.flair-staffformer {
+    background-image: url(%%VerifiedFlairs%%);
+    background-repeat: no-repeat;
+    background-position: 0 -98px;
+    width: 64px;
+    height: 14px;
+}
+/*
 a[href$="user/benhead2007"]:after,
 a[href$="u/benhead2007"]:after,
 a[href$="user/DananF"]:after,
@@ -2480,9 +2544,9 @@ a[href$="user/daniellee912"],
 a[href$="u/daniellee912"] {
     margin-right: 50px;
 }
-
+*/
 /* EX-C9 Flair*/
-
+/*
 a[href$="user/MrLemonDog"]:after,
 a[href$="u/MrLemonDog"]:after,
 a[href$="user/LoLSpook"]:after,
@@ -2514,7 +2578,7 @@ a[href$="user/stunna-"],
 a[href$="u/stunna-"] {
     margin-right: 50px;
 }
-
+*/
 /* Verified Awesomeness WIP*/
 /*
 body.comments-page .sitetable span.flair.flair-kuraudo9~.userattrs::before {
